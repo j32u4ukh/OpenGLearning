@@ -7,6 +7,8 @@
 * Graphics Pipeline: 頂點在屏幕上顯示為一個或多個像素前必須遍歷的整個過程。the entire process vertices have to walk through before ending up as one or more pixels on the screen.
 * Shader: 在圖形卡上運行的小程式。圖形流水線的多個階段可以使用用戶製作的著色器來替換現有功能。a small program that runs on the graphics card. Several stages of the graphics pipeline can use user-made shaders to replace existing functionality.
 * Vertex: 代表單個點的數據集合。a collection of data that represent a single point.
+* 頂點數據(Vertex Data)是一系列頂點的集合。而頂點(Vertex)是一個 3D 坐標的數據的集合。而頂點數據是用頂點屬性(Vertex Attribute)表示的，它可以包含任何我們想用的數據，比如3D位置和顏色值。
+* 圖元(Primitive)：對我們傳入 GPU 的頂點(Vertex)數據指定，這些數據所表示的渲染類型。我們是希望把這些數據渲染成一系列的點？一系列的三角形？還是僅僅是一個長長的線？例如：GL_POINTS、GL_TRIANGLES、GL_LINE_STRIP。
 * Normalized Device Coordinates(NDC): 在剪輯坐標上執行透視劃分後，頂點最終位於的坐標系。 NDC 中介於-1.0和1.0之間的所有頂點位置都不會被丟棄或修剪，並且最終可見。the coordinate system your vertices end up in after perspective division is performed on clip coordinates. All vertex positions in NDC between -1.0 and 1.0 will not be discarded or clipped and end up visible.
 * Vertex Buffer Object: 一個緩衝區對象，該對像在GPU上分配內存並在其中存儲所有頂點數據供圖形卡使用。a buffer object that allocates memory on the GPU and stores all the vertex data there for the graphics card to use.
 * Vertex Array Object: 存儲緩衝區和頂點屬性狀態信息。stores buffer and vertex attribute state information.
